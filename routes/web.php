@@ -246,7 +246,7 @@ Route::get('addfunds', function(){
 
 
 //api
-Route::get('api', function(){
+Route::get('home/api', function(){
 
     return view('pages.dashboard.api');
 })->name('apiHome');
@@ -260,7 +260,7 @@ Route::get('affiliates', function(){
 
 
 //faq
-Route::get('faq', function(){
+Route::get('home/faq', function(){
 
     return view('pages.dashboard.faq');
 })->name('faqHome');
@@ -279,7 +279,7 @@ Route::get('massorder', function(){
 })->name('massorderHome');
 
 //services
-Route::get('services', function(){
+Route::get('home/services', function(){
 
     return view('pages.dashboard.services');
 })->name('servicesHome');
@@ -336,19 +336,6 @@ Route::get('new', function(){
     return view('pages.dashboard.new');
 })->name('newHome');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // child-panel
 Route::get('child-panel', function(){
 
@@ -356,16 +343,11 @@ Route::get('child-panel', function(){
 })->name('childPanelHome');
 
 
-
-
-
 //order
 Route::get('order', function(){
 
     return view('pages.dashboard.orders');
 })->name('orderHome');
-
-
 
 //canceled
 Route::get('order/canceled', function(){
@@ -404,6 +386,40 @@ Route::get('order/processing', function(){
 
     return view('pages.dashboard.processing');
 })->name('processingHome');
+
+
+
+
+
+//api
+Route::get('api', function(){
+
+    return view('pages.api');
+})->name('apiHome');
+
+//services
+Route::get('services', function(){
+
+    return view('pages.services');
+})->name('servicesHome');
+
+
+///faq
+Route::get('faq', function(){
+
+    return view('pages.faq');
+})->name('faqHome');
+
+//blog
+Route::get('blog', function(){
+
+    return view('pages.blog');
+})->name('blogHome');
+
+
+
+
+
 
 
 
